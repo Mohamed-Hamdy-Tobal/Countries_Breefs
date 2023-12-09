@@ -1,0 +1,37 @@
+@tailwind base; /* Base styles Like Materialize*/
+@tailwind components; /* Component styles Like Bootstrap*/
+@tailwind utilities;  /* Utility classes Like Bulma that reoverreading the styles of the components*/
+
+/* Use @apply to inline any existing utility classes into your own custom CSS., in (Component) of tailwind */
+
+@layer components{
+    .container {
+        @apply px-5 mx-auto
+    }
+    .ele-center {
+        @apply flex justify-center items-center
+    }
+    .ele-center-col {
+        @apply flex justify-center items-center flex-col
+    }
+    .main-btn {
+        @apply bg-[#42b0d1] hover:bg-[#81d6e1] transition-all duration-300
+    }
+}
+
+:root {
+    --main-trans : 0.3s;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Nunito', sans-serif !important;
+    background-color: #181f2b;
+}
+input:focus,
+textarea:focus  {
+    outline: none;
+}
+
+/* --------- Start Styling -------------- */
