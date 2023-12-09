@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+export default withMT ({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -28,6 +30,6 @@ export default {
     },
   },
   plugins: [],
-}
+})
 
 // Here we apply an configuration customization to the selector build in tailwind like (colors, animation, )
