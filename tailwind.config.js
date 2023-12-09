@@ -6,9 +6,11 @@ export default withMT ({
   theme: {
     extend: {
       colors: {
-        mainColor: '#181f2b',
-        footColor: '#0c1524',
-        primaryColor: '#67dbda',
+        DME: '#2b3945',
+        DMB: '#202c37',
+        LMT: '#111517',
+        LMI: '#858585',
+        LMB: '#fafafa',
       },
       keyframes : {
         moveRight: {

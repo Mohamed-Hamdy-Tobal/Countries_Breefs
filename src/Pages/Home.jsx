@@ -1,12 +1,11 @@
-import { Button } from "@material-tailwind/react"
 import { Fragment } from "react"
+import MainCountries from "../Components/mainCountries"
 
 export const Home = () => {
 
     return (
         <Fragment>
-            Home
-            <Button>Click</Button>
+            <MainCountries/>
         </Fragment>
     )
 }

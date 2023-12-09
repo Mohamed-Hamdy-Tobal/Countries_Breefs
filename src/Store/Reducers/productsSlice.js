@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { storeData } from "../../assets/data";
 
 const initialState = {
+    darkState: false,
     filterProducts: JSON.parse(sessionStorage.getItem('countries')) || storeData,
     singlePro: JSON.parse(sessionStorage.getItem('oneCountry')) || storeData,
     error : false
@@ -14,7 +15,7 @@ const productsSlice = createSlice({
         setFilterProducts: (state, action) => {
             try {
                 // Try To Get Data From Json File
-                const filter = storeData.filter(product => (product.type) === action.payload )
+                const filter = storeData.filter(product => (product.region) === action.payload )
                 console.log(filter)
                 state.filterProducts = filter
                 state.error = false
@@ -136,10 +137,13 @@ const productsSlice = createSlice({
             } catch (err) {
                 return err
             }
+        },
+        darkMood : (state) => {
+            state.darkState =!state.darkState
         }
     }
 })
 
-export const { setFilterProducts, singleProduct, filterGender, sortFilter, colorFilter, sizeFilter } = productsSlice.actions
+export const { setFilterProducts, singleProduct, darkMood, filterGender, sortFilter, colorFilter, sizeFilter } = productsSlice.actions
 
 export default productsSlice.reducer
