@@ -27,7 +27,7 @@ html {
 }
 body {
     font-family: 'Nunito', sans-serif !important;
-    background-color: #181f2b;
+    /* background-color: #181f2b; */
 }
 input:focus,
 textarea:focus  {

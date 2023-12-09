@@ -1,4 +1,4 @@
-[
+export const storeData = [
   {
     "name": "Afghanistan",
     "topLevelDomain": [".af"],
