@@ -6,6 +6,7 @@ import { Root } from "./Layout/Root";
 import { ThemeProvider } from "@material-tailwind/react";
 import { Provider } from "react-redux";
 import { store } from "./Store/Store";
+import Details from "./Pages/Details";
 
 
 const routes = createBrowserRouter([
@@ -13,7 +14,11 @@ const routes = createBrowserRouter([
     path: '/',
     element: <Root/>,
     children: [
-      {index: true, element: <Home/>}
+      {index: true, element: <Home/>},
+      {
+        path: 'countries/:country',
+        element: <Details/>
+      }
     ]
   }
 ])
