@@ -60,12 +60,27 @@ const countriesSlice = createSlice({
                 return err
             }
         },
+        singleByBorder: (state, action) => {
+            try {
+                const onePro = storeData.filter(product => product.alpha3Code === action.payload)
+                state.singlePro = onePro[0]
+                
+                console.log("Success in setFilterCountry Border");
+
+                // To Save The Data On Session Storage
+                const saveState = JSON.stringify(onePro[0])
+                sessionStorage.setItem('oneCountry', saveState)
+
+            } catch (err) {
+                return err
+            }
+        },
         darkMood : (state) => {
             state.darkState =!state.darkState
         }
     }
 })
 
-export const { getAllContinents, setFilterContinent, singleProduct, darkMood, filterGender, sortFilter, colorFilter, sizeFilter } = countriesSlice.actions
+export const { getAllContinents, setFilterContinent, singleProduct, darkMood, singleByBorder } = countriesSlice.actions
 
 export default countriesSlice.reducer

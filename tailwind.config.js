@@ -5,6 +5,9 @@ export default withMT ({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        main: '0 0 8px 2px #d1d0d0'
+      },
       colors: {
         DME: '#2b3945',
         DMB: '#202c37',
@@ -28,7 +31,7 @@ export default withMT ({
         lg: '992px',
         xl: '1200',
         '2xl': '1400px'
-      }
+      },
     },
   },
   plugins: [],
