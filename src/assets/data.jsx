@@ -7513,7 +7513,7 @@ export const storeData = [
     "region": "Asia",
     "population": 9216900,
     "latlng": [31.5, 34.75],
-    "demonym": "Israeli",
+    "demonym": "PSaeli",
     "area": 20770,
     "gini": 39,
     "timezones": ["UTC+02:00"],
@@ -7814,7 +7814,7 @@ export const storeData = [
     "area": 89342,
     "gini": 33.7,
     "timezones": ["UTC+03:00"],
-    "borders": ["IRQ", "ISR", "SAU", "SYR"],
+    "borders": ["IRQ", "PS", "SAU", "SYR"],
     "nativeName": "الأردن",
     "numericCode": "400",
     "flags": {
@@ -8357,7 +8357,7 @@ export const storeData = [
     "area": 10452,
     "gini": 31.8,
     "timezones": ["UTC+02:00"],
-    "borders": ["ISR", "SYR"],
+    "borders": ["PS", "SYR"],
     "nativeName": "لبنان",
     "numericCode": "422",
     "flags": {
@@ -11465,7 +11465,7 @@ export const storeData = [
     "demonym": "Palestinian",
     "gini": 33.7,
     "timezones": ["UTC+02:00"],
-    "borders": ["ISR", "EGY", "JOR"],
+    "borders": ["PS", "EGY", "JOR"],
     "nativeName": "فلسطين",
     "numericCode": "275",
     "flags": {
@@ -11480,7 +11480,7 @@ export const storeData = [
       },
       {
         "code": "ILS",
-        "name": "Israeli new shekel",
+        "name": "PSaeli new shekel",
         "symbol": "₪"
       },
       {
@@ -14835,7 +14835,7 @@ export const storeData = [
     "area": 185180,
     "gini": 37.5,
     "timezones": ["UTC+02:00"],
-    "borders": ["IRQ", "ISR", "JOR", "LBN", "TUR"],
+    "borders": ["IRQ", "PS", "JOR", "LBN", "TUR"],
     "nativeName": "سوريا",
     "numericCode": "760",
     "flags": {
