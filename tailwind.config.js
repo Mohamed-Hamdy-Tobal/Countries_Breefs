@@ -6,7 +6,10 @@ export default withMT ({
   theme: {
     extend: {
       boxShadow: {
-        main: '0 0 8px 2px #d1d0d0'
+        main: '0 0 8px 2px #d1d0d0',
+        mainHover: '0 0 9px 4px #d1d0d0',
+        mainDark: '0 0 6px 4px #0c222f',
+        mainDarkHover: '0 0 8px 6px #0f2634',
       },
       colors: {
         DME: '#2b3945',

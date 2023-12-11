@@ -4547,7 +4547,7 @@ export const storeData = [
     "area": 1002450,
     "gini": 31.5,
     "timezones": ["UTC+02:00"],
-    "borders": ["ISR", "LBY", "SDN"],
+    "borders": ["PS", "LBY", "SDN"],
     "nativeName": "مصر‎",
     "numericCode": "818",
     "flags": {
@@ -7502,13 +7502,13 @@ export const storeData = [
     "independent": false
   },
   {
-    "name": "Israel",
+    "name": "Palestine",
     "topLevelDomain": [".il"],
-    "alpha2Code": "IL",
-    "alpha3Code": "ISR",
+    "alpha2Code": "PS",
+    "alpha3Code": "PS",
     "callingCodes": ["972"],
     "capital": "Jerusalem",
-    "altSpellings": ["IL", "State of Israel", "Medīnat Yisrā'el"],
+    "altSpellings": [ "Jerusalm"],
     "subregion": "Western Asia",
     "region": "Asia",
     "population": 9216900,
@@ -7518,17 +7518,16 @@ export const storeData = [
     "gini": 39,
     "timezones": ["UTC+02:00"],
     "borders": ["EGY", "JOR", "LBN", "SYR"],
-    "nativeName": "יִשְׂרָאֵל",
+    "nativeName": 'العربية',
     "numericCode": "376",
+    "flag": "https://flagcdn.com/ps.svg",
     "flags": {
-      "svg": "https://flagcdn.com/il.svg",
-      "png": "https://flagcdn.com/w320/il.png"
+      "svg": "https://flagcdn.com/ps.svg",
+      "png": "https://flagcdn.com/w20/ps.png"
     },
     "currencies": [
       {
-        "code": "ILS",
-        "name": "Israeli new shekel",
-        "symbol": "₪"
+        "code": 'Pound'
       }
     ],
     "languages": [
@@ -7536,7 +7535,6 @@ export const storeData = [
         "iso639_1": "he",
         "iso639_2": "heb",
         "name": "Hebrew (modern)",
-        "nativeName": "עברית"
       },
       {
         "iso639_1": "ar",
@@ -7545,21 +7543,7 @@ export const storeData = [
         "nativeName": "العربية"
       }
     ],
-    "translations": {
-      "br": "Israel",
-      "pt": "Israel",
-      "nl": "Israël",
-      "hr": "Izrael",
-      "fa": "اسرائیل",
-      "de": "Israel",
-      "es": "Israel",
-      "fr": "Israël",
-      "ja": "イスラエル",
-      "it": "Israele",
-      "hu": "Izrael"
-    },
-    "flag": "https://flagcdn.com/il.svg",
-    "cioc": "ISR",
+    "cioc": "Ps",
     "independent": true
   },
   {
