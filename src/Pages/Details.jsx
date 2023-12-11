@@ -11,7 +11,6 @@ const Details = () => {
     console.log(params)
 
     const {singlePro} = useSelector(state => state.filterProducts)
-    console.log(singlePro)
 
     return (
         <Fragment>

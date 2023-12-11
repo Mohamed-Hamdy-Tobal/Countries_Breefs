@@ -1,5 +1,5 @@
 import { Fragment } from "react"
-import MainCountries from "../Components/mainCountries"
+import MainCountries from "../Components/MainCountries"
 
 export const Home = () => {
 

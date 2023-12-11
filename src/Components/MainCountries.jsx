@@ -3,7 +3,7 @@ import { faSearch  } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import { useCallback, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { getAllContinents, setFilterContinent } from '../Store/Reducers/countriesSlice';
+import { getAllContinents, setFilterContinent, singleByInput } from '../Store/Reducers/countriesSlice';
 import MainCards from './MainCards';
 
 const MainCountries = () => {
@@ -22,6 +22,16 @@ const MainCountries = () => {
     const continents = ['Africa', 'Europe', 'Asia', 'Americas', 'Oceania']
 
     const dropdownRef = useRef(null);
+
+    const inputRef = useRef(null);
+
+    const inputHand = (e) => {
+        dispatch(singleByInput(e.target.value))
+
+        if (e.target.value === '') {
+            dispatch(getAllContinents())
+        }
+    }
 
     // window.addEventListener('click', (e) => {
     //     console.log(' e.target:', e.target);
@@ -61,7 +71,7 @@ const MainCountries = () => {
         <div className="main-countries py-[60px] bg-[#fafafa] dark:bg-DMB">
             <div className="container">
                 <div className="filteration flex flex-col md:flex-row justify-start md:justify-between items-start md:items-center gap-y-5 w-full">
-                    <div className="search relative dark:text-white w-full md:w-auto"><FontAwesomeIcon icon={faSearch} className="absolute top-2/4 left-[28px] -translate-y-2/4"/><input type="text" id='search-input' placeholder="Search for country..." className="p-[16px] pl-[70px] shadow-sm rounded-[8px] w-full md:w-[400px] max-w-full dark:bg-DME"/></div>
+                    <div className="search relative dark:text-white w-full md:w-auto"><FontAwesomeIcon icon={faSearch} className="absolute top-2/4 left-[28px] -translate-y-2/4"/><input type="text" id='search-input' ref={inputRef} onChange={(e)=> {inputHand(e)}} placeholder="Search for country..." className="p-[16px] pl-[70px] shadow-sm rounded-[8px] w-full md:w-[400px] max-w-full dark:bg-DME"/></div>
                     <div className="filter-country relative">
                         <button onClick={toggleHandler}  ref={dropdownRef} className="text-LMT dark:text-white bg-white hover:bg-[#eee] focus:outline-none font-medium rounded-lg text-sm px-6 py-3 text-center inline-flex items-center dark:bg-DME dark:[#17172d]" type="button">
                             Filter By Region
